@@ -1,0 +1,17 @@
+spring :
+  application :
+    name:crud
+
+# Oracle Database Configuration
+  datasource :
+    driver-class-name : oracle.jdbc.OracleDriver
+    username : hr
+    password: hr
+    url: jdbc:oracle:thin:@//localhost:1521/orclpdb
+  messages :
+    basename : i18n/messages
+    local-default :
+# JPA and Hibernate Configuration for Oracle
+  jpa :
+    hibernate.ddl-auto : update
+    show-sql : true
